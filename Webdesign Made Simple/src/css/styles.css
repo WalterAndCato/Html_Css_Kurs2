@@ -1,0 +1,41 @@
+
+/*
+
+Blau:       #1F4E8C
+Dunkelgrau: #3D3F45
+Hellgrau:   #E5E5E%
+Rot:        #A62C21
+
+*/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+    font-size: 16px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+
+  /* Navigationsleiste */
+
+  .header-nav {
+    width: 100%;
+    height: 50px;
+    background-color: #3D3F45;
+    position: relative;
+  }
+
+  .header-nav > img {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    left: 2rem;
+    top: .55rem;
+  }
