@@ -36,6 +36,42 @@ body {
     height: 30px;
     width: auto;
     position: absolute;
+    font-weight: bold;
+    font-size: 1.1rem;
     left: 2rem;
     top: .55rem;
+  }
+
+  .header-nav > ul {
+    margin: 0;
+    padding: 0;
+    right: 2rem;
+    top: 0.85rem;
+    position: absolute;
+  }
+
+  .header-nav > ul > li {
+    display: inline-block;
+    margin-left: .4rem;
+  }
+
+  .header-nav > ul > li > a:link {
+    color: #fff;
+    text-decoration: none;
+
+  }
+
+  .header-nav > ul > li > a:hover {
+    color: #e5e5e5;
+    text-decoration: none;
+  }
+
+  .header-nav > ul > li > a:active {
+    color: #e5e5e5;
+    text-decoration: none;
+  }
+
+  .header-nav > ul > li > a:visited {
+    color: #fff;
+    text-decoration: none;
   }
