@@ -32,47 +32,58 @@ body {
   position: relative;
 }
 
-.header-nav > img {
+.header-nav .col-6 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.header-nav a > img {
   height: 30px;
   width: auto;
-  position: absolute;
+  float: left;
   font-weight: bold;
   font-size: 1.1rem;
   left: 2rem;
   top: .55rem;
 }
 
-.header-nav > ul {
+.header-nav ul {
   margin: 0;
   padding: 0;
+  float: right;
   right: 2rem;
   height: 100%;
-  position: absolute;
 }
 
-.header-nav > ul > li {
+.header-nav .container,
+.header-nav .row,
+.header-nav .col-6 {
+  height: 100%;
+}
+
+.header-nav ul > li {
   display: inline-block;
   margin-left: .4rem;
   height: 100%;
 }
 
-.header-nav > ul > li > a:link {
+.header-nav ul > li > a:link {
   color: #fff;
   text-decoration: none;
 
 }
 
-.header-nav > ul > li > a:hover {
+.header-nav ul > li > a:hover {
   color: #e5e5e5;
   text-decoration: none;
 }
 
-.header-nav > ul > li > a:active {
+.header-nav ul > li > a:active {
   color: #e5e5e5;
   text-decoration: none;
 }
 
-.header-nav > ul > li > a:visited {
+.header-nav ul > li > a:visited {
   color: #fff;
   text-decoration: none;
 }
