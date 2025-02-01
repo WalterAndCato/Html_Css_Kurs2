@@ -1,5 +1,5 @@
 
-/*
+/* === Farben =================================================
 
 Blau:       #1F4E8C
 Dunkelgrau: #3D3F45
@@ -12,6 +12,7 @@ html {
   font-size: 16px;
 }
 
+/* === Global ===  */
 body {
   margin: 0;
   font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
@@ -23,6 +24,16 @@ body {
 }
 
 
+/* === Generelles ===  */
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
 /* Navigationsleiste */
 
 .header-nav {
@@ -30,6 +41,8 @@ body {
   height: 50px;
   background-color: #3D3F45;
   position: relative;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .header-nav .col-6 {
@@ -39,19 +52,15 @@ body {
 
 .header-nav a > img {
   height: 30px;
+  margin-top: 0.55rem;
   width: auto;
   float: left;
-  font-weight: bold;
-  font-size: 1.1rem;
-  left: 2rem;
-  top: .55rem;
 }
 
 .header-nav ul {
   margin: 0;
   padding: 0;
   float: right;
-  right: 2rem;
   height: 100%;
 }
 
@@ -63,8 +72,13 @@ body {
 
 .header-nav ul > li {
   display: inline-block;
-  margin-left: .4rem;
+  padding: 0 .4rem 0 .4rem;
   height: 100%;
+}
+
+.header-nav ul > li > a {
+  margin-top: .8rem;
+  display: inline-block;
 }
 
 .header-nav ul > li > a:link {
@@ -91,6 +105,45 @@ body {
 .active {
   background-color: #A62C21;
 }
+
+/* ====== Navigationsleiste Mobile ================ */
+
+.mobile-nav-button {
+  color: white;
+  float: right;
+  font-size: 2rem;
+  border: 2px solid white;
+  height: 37px;
+  width: 37px;
+  position: relative;
+  margin-top: .4rem; 
+}
+
+.mobile-nav-button > span {
+  position: absolute;
+  bottom: -2px;
+  left: 7px;
+}
+
+.mobile-nav-content >ul > li {
+  display: block;
+  background-color: #3D3F45;
+  height: 50px;
+  padding: 0 1.2rem;
+  text-align: center;
+}
+
+.mobile-nav-dropdown {
+  position: relative;
+}
+
+.mobile-nav-content {
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+
+/* Header-Banner */
 
 .header-banner{
   background: url("../img/hintergrund.jpg") no-repeat center center;
@@ -134,6 +187,8 @@ body {
 .col-3 {width: 50%;}
 .col-6 {width: 100%;}
 
+/* GRID-DEBUG
+
 .border, .border * {
   border: 1px solid #91C4FF;
 }
@@ -165,7 +220,7 @@ body {
 
 .col-6::after {
   content: "Col-6";
-}
+}*/
 
 
 /*
