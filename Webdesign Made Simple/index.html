@@ -13,9 +13,9 @@
 
     <body>
 
-        <nav class="header-nav">
+        <nav id="header-nav">
 
-          <!--<div class="container">
+          <div class="container" id="desktop-nav">
             <div class="row">
               <div class="col-6">
                 
@@ -24,16 +24,16 @@
                 </a>
 
                 <ul>
-                  <li><a href="index.html">Startseite</a></li>
+                  <li class="active"><a href="index.html">Startseite</a></li>
                   <li><a href="leistungen.html">Leistungen</a></li>
                   <li><a href="kontakt.html">Kontankt</a></li>
                   <li><a href="impressum.html">Impressum</a></li>
                 </ul>
               </div>
             </div>
-          </div>-->
+          </div>
 
-          <div class="container">
+          <div class="container" id="mobile-nav">
             <div class="row">
               <div class="col-6">
                 
@@ -41,11 +41,11 @@
                   <img src="src/img/webdesign-logo.png" alt="Das Logo">
                 </a>
 
-                <div class="mobile-nav-dropdown clearfix">
+                <div id="mobile-nav-dropdown" class="clearfix">
 
-                  <div class="mobile-nav-button"><span>&equiv;</span></div>
+                  <div id="mobile-nav-button"><span>&equiv;</span></div>
 
-                  <div class="mobile-nav-content clearfix">
+                  <div id="mobile-nav-content" class="clearfix">
                     <ul>
                       <li class="active"><a href="index.html">Startseite</a></li>
                       <li><a href="leistungen.html">Leistungen</a></li>
@@ -62,31 +62,27 @@
         </nav>
 
         <header class="header-banner">
+       </header>
 
-        </header>
-
-        <!--<div class="container border">
-          <div class="row">
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
+        <!-- Newsletter-Bereich -->
+       <section class="newsletter-bereich">
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <p id="nb-werbetext"><span class="wichtiger-text">Melde dich jetzt für den Newsletter an und verpasse nichts mehr.</span> Wir schicken nur interessante Informationen</p>
+              </div>
+              <div class="col-2 clerfix">
+                <form id="nb-form" action="index.html" method="post">
+                 
+                  <label class="screen-reader" for="nb-email">E-Mail:</label>
+                  <input class="nb-email-input" id="nb-email" type="email" name="email" placeholder="Deine E-Mail-Adresse">
+                  
+                  <button class="btn-typ-1" id="nb-btn" type="submit">Jetzt anmelden</button>
+                </form>
+              </div>
+            </div>
           </div>
-          <div class="row">
-            <div class="col-2"></div>
-            <div class="col-2"></div>
-            <div class="col-2"></div>
-          </div>
-          <div class="row">
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-          </div>
-          <div class="row">
-            <div class="col-6"></div>
-          </div>
-        </div>-->
+       </section>
 
     </body>
 

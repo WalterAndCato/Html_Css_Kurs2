@@ -32,11 +32,28 @@ body {
   clear: both;
 }
 
+.active {
+  background-color: #A62C21 !important;
+}
 
+.wichtiger-text{
+  font-weight: bold;
+}
+
+.screen-reader{
+  display: none;
+}
+
+.btn-typ-1 {
+  background-color: #A62C21;
+  border: 2px solid #A62C21;
+  color: #fff;
+  padding: 0.4rem 0.6rem;
+}
 
 /* Navigationsleiste */
 
-.header-nav {
+#header-nav {
   width: 100%;
   height: 50px;
   background-color: #3D3F45;
@@ -45,70 +62,72 @@ body {
   font-size: 1.1rem;
 }
 
-.header-nav .col-6 {
+#header-nav .col-6 {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.header-nav a > img {
+#header-nav a > img {
   height: 30px;
   margin-top: 0.55rem;
   width: auto;
   float: left;
 }
 
-.header-nav ul {
+#header-nav ul {
   margin: 0;
   padding: 0;
   float: right;
   height: 100%;
 }
 
-.header-nav .container,
-.header-nav .row,
-.header-nav .col-6 {
+#header-nav .container,
+#header-nav .row,
+#header-nav .col-6 {
   height: 100%;
 }
 
-.header-nav ul > li {
+#header-nav ul > li {
   display: inline-block;
   padding: 0 .4rem 0 .4rem;
   height: 100%;
 }
 
-.header-nav ul > li > a {
+#header-nav ul > li > a {
   margin-top: .8rem;
   display: inline-block;
 }
 
-.header-nav ul > li > a:link {
+#header-nav ul > li > a:link {
   color: #fff;
   text-decoration: none;
 
 }
 
-.header-nav ul > li > a:hover {
+#header-nav ul > li > a:hover {
   color: #e5e5e5;
   text-decoration: none;
 }
 
-.header-nav ul > li > a:active {
+#header-nav ul > li > a:active {
   color: #e5e5e5;
   text-decoration: none;
 }
 
-.header-nav ul > li > a:visited {
+#header-nav ul > li > a:visited {
   color: #fff;
   text-decoration: none;
 }
 
-.active {
-  background-color: #A62C21;
-}
+
 
 /* ====== Navigationsleiste Mobile ================ */
 
-.mobile-nav-button {
+#mobile-nav {
+  display: none;
+}
+
+#mobile-nav-button {
   color: white;
   float: right;
   font-size: 2rem;
@@ -116,16 +135,17 @@ body {
   height: 37px;
   width: 37px;
   position: relative;
-  margin-top: .4rem; 
+  margin-top: .4rem;
+  margin-bottom: 8px; 
 }
 
-.mobile-nav-button > span {
+#mobile-nav-button > span {
   position: absolute;
   bottom: -2px;
   left: 7px;
 }
 
-.mobile-nav-content >ul > li {
+#mobile-nav-content >ul > li {
   display: block;
   background-color: #3D3F45;
   height: 50px;
@@ -133,14 +153,31 @@ body {
   text-align: center;
 }
 
-.mobile-nav-dropdown {
+#mobile-nav-dropdown {
   position: relative;
+  display: inline-block;
+  float: right;
 }
 
-.mobile-nav-content {
+#mobile-nav-content {
   position: absolute;
   right: 0;
   top: 50px;
+  display: none;
+}
+
+.mobile-nav-dropdown:hover .mobile-nav-content {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: block;
+  }
 }
 
 /* Header-Banner */
@@ -161,6 +198,82 @@ body {
   padding-top: 15.625%;
 }
 
+
+/* Newsletter-Bereich */
+
+.newsletter-bereich {
+  width: 100%;
+  background-color: #3D3F45;
+}
+
+#nb-werbetext {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.nb-email-input {
+  width: 78%;
+  height: 35px;
+  border: 2px solid #fff
+  padding: 0.4rem;
+  margin-right: 0.5rem;
+}
+
+#nb-btn {
+  height: 35px;
+}
+
+#nb-form {
+  margin: 0.7rem;
+  float: right;
+  width: 100%;
+  text-align: right;
+}
+
+@media (max-width: 1822px) {
+  .nb-email-input {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1358px) {
+
+  .nb-email-input {
+    width: 100%;
+    margin-bottom: .5rem;
+  }
+
+  #nb-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #nb-werbetext {
+    display: none;
+  }
+
+  #nb-form {
+    margin-top: 0;
+  }
+
+  .newsletter-bereich .col-4{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .nb-email-input {
+    height: 25px;
+  }
+
+  #nb-btn {
+    height: 25px;
+    padding: 0.1rem;
+  }
+
+}
 
 /* Container */
 
@@ -185,6 +298,7 @@ body {
 .col-1 {width: 	16.666%;}
 .col-2 {width: 33.333%;}
 .col-3 {width: 50%;}
+.col-4 {width: 66.666%;}
 .col-6 {width: 100%;}
 
 /* GRID-DEBUG
@@ -223,6 +337,7 @@ body {
 }*/
 
 
+
 /*
 
 BREAKPOINTS:
@@ -241,10 +356,12 @@ BREAKPOINTS:
   .col-1 {width: 	50%;}
   .col-2 {width: 100%;}
   .col-3 {width: 100%;}
+  .col-4 {width: 100%;}
 }
 
 @media (max-width: 480px){
   .col-1 {width: 100%;}
   .col-2 {width: 100%;}
   .col-3 {width: 100%;}
+  .col-4 {width: 100%;}
 }
