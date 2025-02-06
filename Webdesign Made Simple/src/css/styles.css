@@ -182,7 +182,7 @@ body {
 
 /* Header-Banner */
 
-.header-banner{
+#header-banner{
   background: url("../img/hintergrund.jpg") no-repeat center center;
   width: 100%;
   height: 0;
@@ -190,7 +190,7 @@ body {
   padding-top: 20.83%;
 }
 
-.header-banner-klein{
+#header-banner-klein{
   background: url("../img/hintergrund-klein.jpg") no-repeat center center;
   width: 100%;
   height: 0;
@@ -201,7 +201,7 @@ body {
 
 /* Newsletter-Bereich */
 
-.newsletter-bereich {
+#newsletter-bereich {
   width: 100%;
   background-color: #3D3F45;
 }
@@ -211,7 +211,7 @@ body {
   font-size: 1.2rem;
 }
 
-.nb-email-input {
+#nb-email-input {
   width: 78%;
   height: 35px;
   border: 2px solid #fff
@@ -231,14 +231,14 @@ body {
 }
 
 @media (max-width: 1822px) {
-  .nb-email-input {
+  #nb-email-input {
     width: 70%;
   }
 }
 
 @media (max-width: 1358px) {
 
-  .nb-email-input {
+  #nb-email-input {
     width: 100%;
     margin-bottom: .5rem;
   }
@@ -257,14 +257,14 @@ body {
     margin-top: 0;
   }
 
-  .newsletter-bereich .col-4{
+  #newsletter-bereich .col-4{
     display: none;
   }
 }
 
 @media (max-width: 480px) {
 
-  .nb-email-input {
+  #nb-email-input {
     height: 25px;
   }
 
